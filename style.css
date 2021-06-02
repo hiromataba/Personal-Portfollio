@@ -8,7 +8,6 @@ body {
 }
 
 .navbar {
-  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,7 +55,7 @@ body {
   justify-content: center;
   flex-direction: column;
   margin-top: 50px;
-  background-color: #ffffff;
+  background-color: #fff;
   background-image: url("img/Header\ bg@2x.png");
   background-size: cover;
   background-position: center;
@@ -65,7 +64,6 @@ body {
 }
 
 #home-section-title {
-
   color: #172b4d;
   font-size: 50px;
   margin-bottom: -20px;
