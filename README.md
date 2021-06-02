@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Review My Past Projects
+# Personal Portfolio
 
-> This project is going to help us master the review process and how to make a code review  
+> This is my personal portofolio thanks for having time to have a look at it
 
 
 👤 **Aganze Mataba Henri**
@@ -15,7 +15,7 @@
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/hiromataba/Trials-Review/issues).
+Feel free to check the [issues page](https://github.com/hiromataba/Personal-Portfollio/issues).
 
 ## Show your support
 
