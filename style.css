@@ -5,9 +5,10 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-.navbar {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,7 +24,6 @@ body {
 
 #mylogo {
   color: #6070ff;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 23px;
 }
 
@@ -61,7 +61,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  font-family: Arial, Helvetica, sans-serif;
   padding: 0 20px;
 }
 
@@ -76,13 +75,23 @@ body {
   font-weight: bold;
 }
 
-.home-section-contact a {
+#contact a {
   color: #7f8cff;
   text-decoration: none;
 }
 
-.home-section-contact i {
-  color: #505f79;
+.social-icons {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons li {
+  list-style: none;
   margin-right: 10px;
+}
+
+.social-icons i {
+  color: #505f79;
   font-size: 20px;
 }
