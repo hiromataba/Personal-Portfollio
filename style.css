@@ -76,8 +76,9 @@ body {
   font-weight: bold;
 }
 
-.home-section-contact p {
+.home-section-contact a {
   color: #7f8cff;
+  text-decoration: none;
 }
 
 .home-section-contact i {
