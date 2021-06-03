@@ -1,8 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Personal Portfolio
+# Portfolio
 
-> This is my personal portofolio thanks for having time to have a look at it
+# Description
+
+> The purpose of this project is:
+
+    - Understand how to parse a Figma design to create a UI.
+    - Use Flexbox to place elements in the page.
+    - Use CSS Grid to place elements in the page.
+    - Build a personal portfolio site.
 
 
 👤 **Aganze Mataba Henri**
@@ -19,7 +26,7 @@ Feel free to check the [issues page](https://github.com/hiromataba/Personal-Port
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a ⭐️ if you like this project thanks!
 
 ## Acknowledgments
 
