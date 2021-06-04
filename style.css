@@ -9,12 +9,20 @@ body {
   background-color: #f7f6f9;
 }
 
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  width: 100%;
+  width: 430px;
   position: fixed;
   top: 0;
   background-color: white;
@@ -72,14 +80,13 @@ header {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  margin-top: 140px;
   background-color: #fff;
+  margin-top: 140px;
+  padding: 0 20px;
   background-image: url("img/header.png");
-  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 0 20px;
 }
 
 #home-section-title {
@@ -160,6 +167,7 @@ header {
 .img-container {
   width: 360px;
 }
+
 .img-container img {
   width: 100%;
 }
@@ -224,6 +232,7 @@ header {
   background-color: white;
   margin-top: 50px;
   overflow: hidden;
+  background: white;
 }
 
 #about-section-title {
@@ -245,6 +254,26 @@ header {
   margin-top: 30px;
   font-size: 18px;
   background-color: white;
+}
+
+.about-button:hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+.about-section-details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  margin-top: 140px;
+  padding: 0 20px;
+}
+
+#about-section-info {
+  color: #344563;
+  font-size: 16px;
 }
 
 .learned-skills {
