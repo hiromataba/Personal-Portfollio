@@ -102,7 +102,7 @@ header {
   font-size: 16px;
 }
 
-#contact a {
+.contact a {
   color: #7f8cff;
   text-decoration: none;
 }
@@ -232,7 +232,6 @@ header {
   background-color: white;
   margin-top: 50px;
   overflow: hidden;
-  background: white;
 }
 
 #about-section-title {
