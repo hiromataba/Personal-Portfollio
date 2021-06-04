@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  background-color: #f7f6f9;
 }
 
 header {
@@ -59,7 +60,11 @@ header {
 }
 
 .home-section {
-  height: 700px;
+  height: 730px;
+  border-bottom-left-radius: 100px;
+  background-color: white;
+  width: 430px;
+  overflow: hidden;
 }
 
 .home-section-details {
@@ -67,7 +72,7 @@ header {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 140px;
   background-color: #fff;
   background-image: url("img/header.png");
   background-attachment: fixed;
@@ -82,10 +87,12 @@ header {
   font-size: 50px;
   margin-bottom: -20px;
   padding: 0;
+  width: 327px;
 }
 
 #home-section-info {
   color: #344563;
+  font-size: 16px;
 }
 
 #contact a {
@@ -111,6 +118,9 @@ header {
 
 .work-section {
   background-color: #f7f6f9;
+  margin-top: 100px;
+  width: 410px;
+  overflow: hidden;
 }
 
 .work-section-card {
@@ -140,7 +150,7 @@ header {
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 80px;
   background-color: #f7f6f9;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .card-info-title {
@@ -148,7 +158,7 @@ header {
 }
 
 .img-container {
-  width: 370px;
+  width: 360px;
 }
 .img-container img {
   width: 100%;
@@ -207,9 +217,21 @@ header {
 }
 
 .about-section {
-  width: 390px;
-  border-top-right-radius: 500px;
-  height: 8800px;
+  width: 430px;
+  padding-left: -10px;
+  border-top-right-radius: 100px;
+  height: 1200px;
+  background-color: white;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+#about-section-title {
+  color: #172b4d;
+  font-size: 50px;
+  margin-bottom: -17px;
+  padding: 0;
+  width: 200px;
 }
 
 .about-button {
@@ -252,7 +274,7 @@ header {
   display: flex;
   align-items: center;
   background-color: #f7f7f9;
-  width: 270px;
+  width: 290px;
   margin: 10px 20px;
   height: 60px;
   border-radius: 10px;
@@ -286,7 +308,8 @@ header {
   color: black;
 }
 
-.skills-select i,.frameworks-select i{
+.skills-select i,
+.frameworks-select i {
   color: gray;
   margin-right: 45px;
 }
