@@ -36,12 +36,17 @@ header {
   margin-bottom: 30px;
 }
 
-#mylogo {
+.mylogo {
   color: #6070ff;
   font-size: 23px;
 }
 
-#mylogo a {
+.mylogo a {
+  text-decoration: none;
+}
+
+.contact a {
+  color: #7f8cff;
   text-decoration: none;
 }
 
@@ -100,11 +105,6 @@ header {
 #home-section-info {
   color: #344563;
   font-size: 16px;
-}
-
-.contact a {
-  color: #7f8cff;
-  text-decoration: none;
 }
 
 .social-icons {
