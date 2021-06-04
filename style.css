@@ -189,21 +189,51 @@ header {
   color: #344563;
 }
 
-.card-skills-button {
-  position: static;
-  color: #6070ff;
-  background-color: #ebebff;
-  border: none;
-  height: 35px;
-  border-radius: 8px;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  margin-right: 5px;
+.skills {
+  display: flex;
+  align-items: center;
 }
 
-.card-skills-button:hover {
-  background-color: #6070ff;
-  color: white;
+.card-skills-li-html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  position: static;
+  width: 53px;
+  height: 24px;
+  background-color: #ebebff;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #6070FF;
+}
+
+.card-skills-li-css {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  position: static;
+  width: 53px;
+  height: 24px;
+  background-color: #ebebff;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #6070FF;
+}
+
+.card-skills-li-js {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  position: static;
+  width: 89px;
+  height: 24px;
+  background-color: #ebebff;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #6070FF;
 }
 
 .see-project-button {
