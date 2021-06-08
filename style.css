@@ -465,9 +465,4 @@ header {
 
 .submit-contact:hover {
   background-color: #6070ff;
-<<<<<<< HEAD
-  color: white;
-=======
-  color: #fff;
->>>>>>> parent of 7b4c15b... Fix linter errors in style.css File
 }
