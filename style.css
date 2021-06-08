@@ -295,7 +295,7 @@ header {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background-color: #fff;
+  background-color: white;
   margin-top: 140px;
   padding: 0 20px;
 }
@@ -368,4 +368,101 @@ header {
 
 #skills-p {
   width: 115px;
+}
+
+.contact-section {
+  background-color: white;
+}
+
+.contact-section-container {
+  width: 430px;
+  height: 800px;
+  padding-left: 15px;
+  border-top-left-radius: 100px;
+  background-color: #6070ff;
+  background-image: url("./img/contact-bg.png");
+  background-position: top right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contact-section-head {
+  padding-right: 15px;
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+}
+
+.contact-section-title {
+  font-size: 50px;
+  padding: 0;
+}
+
+.contact-section-info {
+  font-size: 20px;
+  line-height: 28px;
+  padding-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.contact-form input {
+  margin-bottom: 20px;
+  border: 1px solid #cfd8dc;
+  outline: none;
+  background-color: white;
+  height: 50px;
+  font-size: 18px;
+  color: #172b4d;
+  border-radius: 8px;
+  padding-left: 22px;
+  width: 395px;
+}
+
+
+.textarea {
+  border: 1px solid #cfd8dc;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  width: 395px;
+  height: 170px;
+  padding-left: 22px;
+  padding-top: 25px;
+  font-size: 18px;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #000;
+}
+
+.submit-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 48px;
+  background: white;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  color: #6070ff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.submit-contact:hover {
+  background-color: #6070ff;
 }
