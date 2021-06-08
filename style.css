@@ -295,7 +295,7 @@ header {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background-color: #fff;
+  background-color: white;
   margin-top: 140px;
   padding: 0 20px;
 }
@@ -453,7 +453,7 @@ header {
   justify-content: center;
   width: 140px;
   height: 48px;
-  background: #ffffff;
+  background: white;
   border-radius: 8px;
   border: none;
   font-size: 20px;
@@ -464,5 +464,5 @@ header {
 
 .submit-contact:hover {
   background-color: #6070ff;
-  color: #ffffff;
+  color: white;
 }
