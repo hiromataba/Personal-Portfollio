@@ -85,7 +85,7 @@ header {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #ffffff;
   margin-top: 140px;
   padding: 0 20px;
   background-image: url("img/header.png");
@@ -428,7 +428,6 @@ header {
   padding-left: 22px;
   width: 395px;
 }
-
 
 .textarea {
   border: 1px solid #cfd8dc;
