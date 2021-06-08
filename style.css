@@ -438,8 +438,8 @@ header {
   height: 170px;
   padding-left: 22px;
   padding-top: 25px;
-  color: #b3bac5;
   font-size: 18px;
+  outline: none;
 }
 
 .contact-form input:focus,
