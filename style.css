@@ -429,7 +429,6 @@ header {
   width: 395px;
 }
 
-
 .textarea {
   border: 1px solid #cfd8dc;
   margin-bottom: 20px;
@@ -465,5 +464,5 @@ header {
 
 .submit-contact:hover {
   background-color: #6070ff;
-  color: #fff;
+  color: #ffffff;
 }
