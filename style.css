@@ -429,6 +429,7 @@ header {
   width: 395px;
 }
 
+
 .textarea {
   border: 1px solid #cfd8dc;
   margin-bottom: 20px;
@@ -458,9 +459,11 @@ header {
   border: none;
   font-size: 20px;
   color: #6070ff;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 
 .submit-contact:hover {
-  background-color: white;
-  color: #6070ff;
+  background-color: #6070ff;
+  color: #fff;
 }
