@@ -410,6 +410,12 @@ header {
   flex-direction: column;
 }
 
+.fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
 .contact-form input {
   margin-bottom: 20px;
   border: 1px solid #cfd8dc;
