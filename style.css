@@ -267,6 +267,7 @@ header {
   height: 1300px;
   background-color: white;
   margin-top: 50px;
+  width: 430px;
   overflow: hidden;
 }
 
@@ -301,6 +302,7 @@ header {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+
   margin-top: 140px;
   padding: 0 20px;
 }
@@ -492,7 +494,7 @@ header {
     display: none;
   }
 
-  .about-section{
+  .about-section {
     display: flex;
   }
 }
@@ -569,7 +571,6 @@ header {
     width: 100%;
     overflow: hidden;
     height: 800px;
-    
   }
 
   .about-section-details {
