@@ -691,16 +691,12 @@ header {
     flex-direction: column;
   }
 
-  .framework-select,
-  .skills-select {
+  .framework-select {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid gray;
+    justify-content: space-between;
     width: 600px;
   }
 
-  .framework-select,
   .skills-select {
     display: flex;
     justify-content: space-between;
