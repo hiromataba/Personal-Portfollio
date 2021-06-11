@@ -663,6 +663,11 @@ header {
     width: 500px;
     height: 700px;
     order: 0;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .img-left:hover {
+    transform: scale(1.05);
   }
 
   .img-container {
@@ -672,6 +677,11 @@ header {
     width: 500px;
     height: 700px;
     order: 2;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .img-container:hover {
+    transform: scale(1.05);
   }
 
   .languages-select {
