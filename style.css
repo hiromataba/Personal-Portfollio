@@ -507,7 +507,7 @@ header {
   color: white;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   #hamburger {
     display: none;
   }
@@ -659,14 +659,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    object-fit: contain;
     width: 500px;
     height: 700px;
     order: 0;
-  }
-
-  .img-left img {
-    width: 500px;
-    height: 400px;
   }
 
   .img-container {
