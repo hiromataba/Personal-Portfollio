@@ -13,7 +13,7 @@ ul {
   padding: 0;
 }
 
-button{
+button {
   transition: all 0.5s;
 }
 
@@ -249,7 +249,7 @@ header {
   transition: transform 0.8s ease-in;
 }
 
-.card-inner-info:hover{
+.card-inner-info:hover {
   transform: translateX(5%);
 }
 
@@ -304,7 +304,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 180px;
+  width: 140px;
   height: 50px;
   color: #396df2;
   border-radius: 8px;
@@ -518,12 +518,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 180px;
+  width: 140px;
   height: 48px;
   background: white;
   border-radius: 8px;
   border: none;
-  font-size: 18px;
+  font-size: 17px;
   color: #6070ff;
   cursor: pointer;
   transition: all 0.5s;
