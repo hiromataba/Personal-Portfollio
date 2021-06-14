@@ -699,7 +699,7 @@ header {
   }
 
   .img-left:hover {
-    transform: translateZ(5%) scale(1.08);
+    transform: scale(1.03);
   }
 
   .img-container {
@@ -713,7 +713,7 @@ header {
   }
 
   .img-container:hover {
-    transform: translateX(5%) scale(1.08);
+    transform: translateX(5%) scale(1.03);
   }
 
   .languages-select {
