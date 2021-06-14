@@ -6,14 +6,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background-color: #8961da;
+  background-color: #f7f6f9;
 }
 
 ul {
   padding: 0;
 }
 
-button{
+button {
   transition: all 0.5s;
 }
 
@@ -38,15 +38,14 @@ header {
 }
 
 .logo {
-  width: 100px;
-  height: 20px;
-  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mylogo {
   color: #6070ff;
-  font-size: 23px;
-  width: 100px;
+  font-size: 20px;
   animation: logo 1.2s ease-in-out 3s 1 forwards;
 }
 
@@ -250,7 +249,7 @@ header {
   transition: transform 0.8s ease-in;
 }
 
-.card-inner-info:hover{
+.card-inner-info:hover {
   transform: translateX(5%);
 }
 
@@ -302,16 +301,17 @@ header {
 }
 
 .see-project-button {
-  position: static;
-  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
   height: 50px;
   color: #396df2;
-  letter-spacing: 0.03em;
   border-radius: 8px;
   border: 1px solid #7f8cff;
   margin-top: 20px;
   margin-bottom: 30px;
-  font-size: 18px;
+  font-size: 17px;
   background-color: white;
 }
 
@@ -337,7 +337,6 @@ header {
 }
 
 .about-button {
-  position: static;
   width: 200px;
   height: 55px;
   color: #396df2;
@@ -439,12 +438,17 @@ header {
 
 .contact-section {
   background-color: white;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .contact-section-container {
   width: 100%;
   height: 800px;
-  padding-left: 15px;
+  padding-left: 8px;
   border-top-left-radius: 100px;
   background-color: #6070ff;
   background-image: url("./img/contact-bg.png");
@@ -517,7 +521,6 @@ header {
 
 .submit-contact {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 140px;
@@ -525,7 +528,7 @@ header {
   background: white;
   border-radius: 8px;
   border: none;
-  font-size: 20px;
+  font-size: 17px;
   color: #6070ff;
   cursor: pointer;
   transition: all 0.5s;
@@ -696,7 +699,7 @@ header {
   }
 
   .img-left:hover {
-    transform: translateZ(5%) scale(1.08);
+    transform: scale(1.03);
   }
 
   .img-container {
@@ -710,7 +713,7 @@ header {
   }
 
   .img-container:hover {
-    transform: translateX(5%) scale(1.08);
+    transform: translateX(5%) scale(1.03);
   }
 
   .languages-select {
