@@ -6,11 +6,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background-color: #f7f6f9;
+  background-color: #8961da;
 }
 
 ul {
   padding: 0;
+}
+
+button{
+  transition: all 0.5s;
 }
 
 li {
@@ -34,7 +38,6 @@ header {
 }
 
 .logo {
-  position: static;
   width: 100px;
   height: 20px;
   margin-bottom: 30px;
@@ -43,6 +46,7 @@ header {
 .mylogo {
   color: #6070ff;
   font-size: 23px;
+  width: 100px;
   animation: logo 1.2s ease-in-out 3s 1 forwards;
 }
 
@@ -243,6 +247,11 @@ header {
   font-size: 15px;
   margin-top: -10px;
   color: #344563;
+  transition: transform 0.8s ease-in;
+}
+
+.card-inner-info:hover{
+  transform: translateX(5%);
 }
 
 .skills {
@@ -668,7 +677,7 @@ header {
   }
 
   .work-section-card-right {
-    width: 400px;
+    background-color: transparent;
   }
 
   .work-section-card-left {
@@ -687,7 +696,7 @@ header {
   }
 
   .img-left:hover {
-    transform: scale(1.05);
+    transform: translateZ(5%) scale(1.08);
   }
 
   .img-container {
@@ -701,7 +710,7 @@ header {
   }
 
   .img-container:hover {
-    transform: scale(1.08);
+    transform: translateX(5%) scale(1.08);
   }
 
   .languages-select {
