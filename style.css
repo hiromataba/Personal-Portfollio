@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background-color: #8961da;
+  background-color: #f7f6f9;
 }
 
 ul {
@@ -38,15 +38,15 @@ header {
 }
 
 .logo {
-  width: 100px;
+  position: static;
+  width: 180px;
   height: 20px;
   margin-bottom: 30px;
 }
 
 .mylogo {
   color: #6070ff;
-  font-size: 23px;
-  width: 100px;
+  font-size: 20px;
   animation: logo 1.2s ease-in-out 3s 1 forwards;
 }
 
