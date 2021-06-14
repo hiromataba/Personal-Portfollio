@@ -2,6 +2,8 @@
 
 # Portfolio
 
+Here is the link to the live version : https://hiromataba.github.io/Personal-Portfollio/
+
 # Description
 
 > The purpose of this project is:
