@@ -38,10 +38,9 @@ header {
 }
 
 .logo {
-  position: static;
-  width: 180px;
-  height: 20px;
-  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mylogo {
@@ -302,16 +301,17 @@ header {
 }
 
 .see-project-button {
-  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 120px;
   height: 50px;
   color: #396df2;
-  letter-spacing: 0.03em;
   border-radius: 8px;
   border: 1px solid #7f8cff;
   margin-top: 20px;
   margin-bottom: 30px;
-  font-size: 18px;
+  font-size: 17px;
   background-color: white;
 }
 
@@ -337,7 +337,6 @@ header {
 }
 
 .about-button {
-  position: static;
   width: 200px;
   height: 55px;
   color: #396df2;
@@ -517,7 +516,6 @@ header {
 
 .submit-contact {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 140px;
@@ -525,7 +523,7 @@ header {
   background: white;
   border-radius: 8px;
   border: none;
-  font-size: 20px;
+  font-size: 18px;
   color: #6070ff;
   cursor: pointer;
   transition: all 0.5s;
