@@ -13,6 +13,10 @@ ul {
   padding: 0;
 }
 
+button{
+  transition: all 0.5s;
+}
+
 li {
   list-style: none;
 }
@@ -43,6 +47,7 @@ header {
 .mylogo {
   color: #6070ff;
   font-size: 23px;
+  width: 100px;
   animation: logo 1.2s ease-in-out 3s 1 forwards;
 }
 
@@ -243,6 +248,11 @@ header {
   font-size: 15px;
   margin-top: -10px;
   color: #344563;
+  transition: transform 0.8s ease-in;
+}
+
+.card-inner-info:hover{
+  transform: translateX(5%);
 }
 
 .skills {
@@ -668,7 +678,7 @@ header {
   }
 
   .work-section-card-right {
-    width: 400px;
+    background-color: transparent;
   }
 
   .work-section-card-left {
@@ -687,7 +697,7 @@ header {
   }
 
   .img-left:hover {
-    transform: scale(1.05);
+    transform: translateZ(5%) scale(1.08);
   }
 
   .img-container {
@@ -701,7 +711,7 @@ header {
   }
 
   .img-container:hover {
-    transform: scale(1.08);
+    transform: translateX(5%) scale(1.08);
   }
 
   .languages-select {
