@@ -68,7 +68,7 @@ header {
 }
 
 .contact a {
-  color: #0A23ff;
+  color: #0a23ff;
   text-decoration: none;
 }
 
@@ -229,7 +229,7 @@ header {
 
 .author-skills {
   font-size: 13px;
-  color: #424A57;
+  color: #424a57;
 }
 
 .card-info img {
@@ -470,7 +470,7 @@ header {
 }
 
 .contact-section-info {
-  color: #FFFFFF;
+  color: white;
   font-size: 20px;
   line-height: 28px;
   padding-bottom: 30px;
