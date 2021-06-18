@@ -68,7 +68,7 @@ header {
 }
 
 .contact a {
-  color: #7f8cff;
+  color: #0A23ff;
   text-decoration: none;
 }
 
@@ -229,7 +229,7 @@ header {
 
 .author-skills {
   font-size: 13px;
-  color: #7a869a;
+  color: #424A57;
 }
 
 .card-info img {
@@ -239,7 +239,7 @@ header {
 
 .card-date {
   font-size: 13px;
-  color: #7a869a;
+  color: #484e60;
 }
 
 .card-inner-info {
@@ -269,7 +269,7 @@ header {
   background-color: #ebebff;
   border-radius: 8px;
   font-size: 14px;
-  color: #6070ff;
+  color: #0018f0;
 }
 
 .card-skills-li-css {
@@ -283,7 +283,7 @@ header {
   background-color: #ebebff;
   border-radius: 8px;
   font-size: 14px;
-  color: #6070ff;
+  color: #0018f0;
 }
 
 .card-skills-li-js {
@@ -297,7 +297,7 @@ header {
   background-color: #ebebff;
   border-radius: 8px;
   font-size: 14px;
-  color: #6070ff;
+  color: #0018f0;
 }
 
 .see-project-button {
@@ -470,6 +470,7 @@ header {
 }
 
 .contact-section-info {
+  color: #FFFFFF;
   font-size: 20px;
   line-height: 28px;
   padding-bottom: 30px;
