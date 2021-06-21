@@ -74,11 +74,15 @@ header {
 .mobileMenu li a {
   color: #fff;
   margin-bottom: 40px;
-  display: block;
+  padding: 0;
   text-decoration: none;
   font-weight: 600;
   font-size: 32px;
-  line-height: 44px;
+  line-height: 84px;
+}
+
+.mobileMenu li{
+  padding: 0;
 }
 
 .logo {
