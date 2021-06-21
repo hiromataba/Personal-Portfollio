@@ -85,9 +85,32 @@ header {
 }
 
 .burger {
-  margin: 2px 0;
-  border-bottom: 3px solid #6070ff;
-  width: 26px;
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  margin: 0 10px;
+  background: #6070ff;
+  width: 28px;
+}
+
+.burger::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  background: #6070ff;
+  width: 28px;
+}
+
+.burger::after{
+  content: '';
+  position: absolute;
+  top: 8px;
+  width: 28px;
+  height: 3px;
+  background: #6070ff;
+  width: 28px;
 }
 
 .home-section {
