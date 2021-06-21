@@ -37,6 +37,50 @@ header {
   display: none;
 }
 
+.mobileMenu {
+  display: flex;
+  position: fixed;
+  background-image: url("./img/Overlay.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 33px 38px 0px 28px;
+  margin-top: 0;
+  margin-bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  flex-direction: column;
+}
+
+.mobileMenu .close-menu-btn {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.mobileMenu .close-menu-btn button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobileMenu .close-menu-btn button img {
+  pointer-events: none;
+}
+
+.mobileMenu li a {
+  color: #fff;
+  margin-bottom: 40px;
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -84,33 +128,13 @@ header {
   justify-content: center;
 }
 
-.burger {
-  position: absolute;
-  width: 28px;
-  height: 3px;
-  margin: 0 10px;
-  background: #6070ff;
-  width: 28px;
+.burger img {
+  cursor: pointer;
 }
 
-.burger::before {
-  content: '';
-  position: absolute;
-  top: -8px;
-  width: 28px;
-  height: 3px;
-  background: #6070ff;
-  width: 28px;
-}
-
-.burger::after{
-  content: '';
-  position: absolute;
-  top: 8px;
-  width: 28px;
-  height: 3px;
-  background: #6070ff;
-  width: 28px;
+.burger img:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
 }
 
 .home-section {
@@ -612,6 +636,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .close-menu-btn {
+    display: none;
   }
 
   .home-section-details {
