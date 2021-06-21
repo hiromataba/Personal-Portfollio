@@ -17,17 +17,37 @@
     />
   </head>
   <body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "GA_MEASUREMENT_ID");
+    </script>
+
     <header>
       <div class="logo">
-        <h1 class="mylogo"><a href="#">My Logo</a></h1>
+        <p class="mylogo"><a href="#">My Logo</a></p>
       </div>
       <nav class="navbar">
         <div id="hamburger">
-          <div class="burger"></div>
-          <div class="burger"></div>
-          <div class="burger"></div>
+          <div class="burger">
+            <img src="./img/menuBtn.png" alt="openMenu">
+          </div>
         </div>
         <ul class="nav-links">
+          <li class="close-menu-btn">
+            <button type="button">
+              <img src="./img/closeMenu.png" alt="closeMenu" >
+            </button>
+          </li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#about-section">About</a></li>
           <li><a href="#contact-section">Contact</a></li>
@@ -49,23 +69,23 @@
             <p class="contact"><a href="#">LET'S CONNECT</a></p>
             <ul class="social-icons">
               <li>
-                <a href="https://twitter.com/MatabaHiro"
+                <a href="https://twitter.com/MatabaHiro" aria-label="twitter"
                   ><i class="fa fa-twitter"></i
                 ></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/hiro-mataba-1bb910209/"
+                <a href="https://www.linkedin.com/in/hiro-mataba-1bb910209/" aria-label="linkedin"
                   ><i class="fa fa-linkedin"></i
                 ></a>
               </li>
               <li>
-                <a href="https://github.com/hiromataba"
+                <a href="https://github.com/hiromataba" aria-label="github"
                   ><i class="fa fa-github"></i
                 ></a>
               </li>
               <li>
                 <a
-                  href="https://www.facebook.com/profile.php?id=100010336394391"
+                  href="https://www.facebook.com/profile.php?id=100010336394391" aria-label="facebook"
                   ><i class="fa fa-facebook"></i
                 ></a>
               </li>
@@ -202,23 +222,23 @@
               <p class="contact"><a href="#">LET'S CONNECT</a></p>
               <ul class="social-icons">
                 <li>
-                  <a href="https://twitter.com/MatabaHiro"
+                  <a href="https://twitter.com/MatabaHiro" aria-label="twitter"
                     ><i class="fa fa-twitter"></i
                   ></a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/hiro-mataba-1bb910209/"
+                  <a href="https://www.linkedin.com/in/hiro-mataba-1bb910209/" aria-label="linkedin"
                     ><i class="fa fa-linkedin"></i
                   ></a>
                 </li>
                 <li>
-                  <a href="https://github.com/hiromataba"
+                  <a href="https://github.com/hiromataba" aria-label="github"
                     ><i class="fa fa-github"></i
                   ></a>
                 </li>
                 <li>
                   <a
-                    href="https://www.facebook.com/profile.php?id=100010336394391"
+                    href="https://www.facebook.com/profile.php?id=100010336394391" aria-label="facebook"
                     ><i class="fa fa-facebook"></i
                   ></a>
                 </li>
@@ -329,5 +349,7 @@
         </div>
       </section>
     </main>
+
+    <script src="index.js"></script>
   </body>
 </html>
