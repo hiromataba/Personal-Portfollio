@@ -694,9 +694,8 @@ header {
 }
 
 .showPopup {
-  display:flex;
+  display: flex;
 }
-
 
 @media screen and (max-width: 991.98px) {
   .blocks {
@@ -712,7 +711,6 @@ header {
   .left-block .grid-block .card-skills-li {
     margin-left: -10px;
   }
-
 }
 
 @media screen and (min-width: 992px) {
