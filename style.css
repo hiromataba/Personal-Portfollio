@@ -287,14 +287,6 @@ header {
   color: white;
 }
 
-.popup-mobile {
-  display: flex;
-}
-
-.popup-window {
-  display: flex;
-}
-
 .popup-window-mobile-header {
   display: flex;
   align-items: center;
@@ -320,32 +312,6 @@ header {
 
 .mobile-info {
   padding-left: 10px;
-}
-
-.left-block-btns {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 50px;
-}
-
-.see-live-btn,
-.see-code-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: white;
-  border: 1px solid #6070ff;
-  width: 130px;
-  border-radius: 5px;
-  height: 40px;
-  padding-right: 5px;
-  font-size: 16px;
-  color: #396df2;
-}
-
-.see-live-btn span,
-.see-code-btn span {
-  margin-left: 10px;
 }
 
 .see-code-btn {
@@ -466,6 +432,15 @@ header {
 
 #skills-p {
   width: 115px;
+}
+
+.snapshoot-img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.snapshoot-img img {
+  width: 100%;
 }
 
 .contact-section {
@@ -672,15 +647,6 @@ header {
   padding: 0;
 }
 
-.snapshoot-img {
-  width: 100%;
-  margin-top: 20px;
-}
-
-.snapshoot-img img {
-  width: 100%;
-}
-
 .blocks {
   display: flex;
   width: 100%;
@@ -734,11 +700,7 @@ header {
   line-height: 15px;
 }
 
-.see-code-btn {
-  margin-left: 20px;
-}
-
-@media screen and (max-width:991.98px){
+@media screen and (max-width: 991.98px) {
   .blocks {
     flex-direction: column;
   }
