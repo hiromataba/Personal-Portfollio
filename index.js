@@ -107,9 +107,9 @@ function implementProjects() {
     const seeMoreBtn = document.createElement('button');
     seeMoreBtn.classList.add('see-project-button');
     seeMoreBtn.innerText = 'See Project';
-    workCardRight.appendChild(seeMoreBtn);
+    seeMoreBtn.type = 'button';
     seeMoreBtn.dataset.key = project.key;
-
+    workCardRight.appendChild(seeMoreBtn);
 
     projectArticle.appendChild(workCardRight);
 
@@ -118,3 +118,38 @@ function implementProjects() {
 }
 
 implementProjects();
+
+// POP UP WINDOW
+const popupWindow = document.querySelector('.popup-window');
+const seeProjectBtns = [...document.querySelectorAll('.see-project-button')];
+const showPopupWindow = (btn) => {
+    popupWindow.style.display = 'flex';
+    const projectPortfolio = myProjects.filter((project) => project.key === Number(btn.dataset.key))[0];
+    // Add project Name
+    document.querySelector('.popup-window .popup-window-header h2').innerText = projectPortfolio.projectName;
+    // Add project Image
+    const projectImage = document.querySelector('.popup-window .snapshoot-img img');
+    projectImage.src = projectPortfolio.projectImage;
+    projectImage.alt = projectPortfolio.projectName;
+    // Add project Text
+    document.querySelector('.popup-window .blocks .right-block p').innerText = projectPortfolio.projectText;
+    // Add project Technologies
+    const technologiesWrap = document.querySelector('.popup-window .blocks .left-block ul');
+    const technologiesWrapChild = [...technologiesWrap.childNodes];
+    technologiesWrapChild.forEach((child,index) => {
+        technologiesWrap.removeChild(technologiesWrapChild[index]);
+    })
+    console.log(technologiesWrapChild)
+    projectPortfolio.projectTechnologies.forEach((tech) => {
+        const techItem = document.createElement('li');
+        techItem.classList.add('card-skills-li');
+        techItem.innerText = tech;
+        technologiesWrap.appendChild(techItem)
+    })
+    // Add links to Buttons
+    document.querySelector('.popup-window .blocks .left-block-btns .see-live-btn').href = projectPortfolio.liveLink;
+    document.querySelector('.popup-window .blocks .left-block-btns .see-code-btn').href = projectPortfolio.sourceLink;
+
+}
+seeProjectBtns.forEach(btn => btn.addEventListener('click', () => showPopupWindow(btn)));
+const closePopupWindow = document.querySelector('.popup-window .x img').addEventListener('click', () => popupWindow.style.display = 'none');
