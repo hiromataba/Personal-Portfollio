@@ -148,3 +148,20 @@ function popupClose() {
   popupBody.classList.remove('showPopup');
 }
 closePopupWindow.addEventListener('click', () => popupClose());
+// Add validation to the email
+const submitContactBtn = document.querySelector('.submit-contact');
+const emailInput = document.querySelector('form fieldset input[type="email"');
+submitContactBtn.addEventListener('click', (e) => {
+  if (emailInput.value !== emailInput.value.toLowerCase()) {
+    e.preventDefault();
+    emailInput.parentElement.classList.add('invalid-input');
+  }
+});
+emailInput.addEventListener('input', (e) => {
+  if (e.target.value !== emailInput.value.toLowerCase()) {
+    e.preventDefault();
+    emailInput.parentElement.classList.add('invalid-input');
+  } else {
+    emailInput.parentElement.classList.remove('invalid-input');
+  }
+});
