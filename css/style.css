@@ -99,7 +99,7 @@ header {
   background-color: white;
   margin-top: 140px;
   padding: 0 20px;
-  background-image: url("img/header.png");
+  background-image: url("/img/header.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -731,7 +731,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("./img/desktopversionhomepage.png");
+    background-image: url("/img/desktopversionhomepage.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
