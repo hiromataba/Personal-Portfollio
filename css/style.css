@@ -476,10 +476,7 @@ header {
 .mobileMenu {
   display: flex;
   position: fixed;
-  background-image: url("./img/Overlay.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: rebeccapurple;
   padding: 33px 38px 0 28px;
   margin-top: 0;
   margin-bottom: 0;
@@ -662,10 +659,6 @@ header {
   padding-left: 15px;
 }
 
-.popup-mobile {
-  display: none;
-}
-
 .grid-block {
   display: grid;
   align-items: flex-start;
@@ -700,17 +693,26 @@ header {
   line-height: 15px;
 }
 
-@media screen and (max-width: 378px){
-  .card-skills-li{
-    margin-left: -10px;
-    padding: 0;
-  }
+.showPopup {
+  display:flex;
 }
+
 
 @media screen and (max-width: 991.98px) {
   .blocks {
     flex-direction: column;
   }
+}
+
+@media screen and (max-width: 400px) {
+  .left-block .grid-block {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .left-block .grid-block .card-skills-li {
+    margin-left: -10px;
+  }
+
 }
 
 @media screen and (min-width: 992px) {

@@ -112,7 +112,7 @@ implementProjects();
 const popupWindow = document.querySelector('.popup-window');
 const seeProjectBtns = [...document.querySelectorAll('.see-project-button')];
 const showPopupWindow = (btn) => {
-  popupWindow.style.display = 'flex';
+  popupWindow.classList.add('showPopup');
   let projectPortfolio = myProjects.filter((project) => project.key === Number(btn.dataset.key));
   [projectPortfolio] = projectPortfolio;
   // Add project Name
@@ -142,6 +142,6 @@ const showPopupWindow = (btn) => {
 seeProjectBtns.forEach((btn) => btn.addEventListener('click', () => showPopupWindow(btn)));
 const closePopupWindow = document.querySelector('.popup-window .x img');
 function popupClose() {
-  popupWindow.style.display = 'none';
+  popupWindow.classList.remove('showPopup');
 }
 closePopupWindow.addEventListener('click', () => popupClose());
