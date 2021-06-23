@@ -315,7 +315,7 @@ header {
 }
 
 .see-code-btn {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .about-section {
@@ -698,6 +698,13 @@ header {
 .see-code-btn span {
   margin-left: 10px;
   line-height: 15px;
+}
+
+@media screen and (max-width: 378px){
+  .card-skills-li{
+    margin-left: -10px;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 991.98px) {
