@@ -630,7 +630,6 @@ header {
   bottom: 77px;
   max-width: 1156px;
   overflow-y: auto;
-  border-radius: 16px;
   border: 1px solid #dfe1e6;
   position: fixed;
 }
@@ -999,7 +998,7 @@ header {
     margin-left: -10px;
   }
 
-  .popup-window-header{
+  .popup-window-header {
     height: 40px;
   }
 }
