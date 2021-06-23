@@ -110,21 +110,23 @@ implementProjects();
 
 // POP UP WINDOW
 const popupWindow = document.querySelector('.popup-window');
+const popupBody = document.querySelector('.popup-wrapper');
 const seeProjectBtns = [...document.querySelectorAll('.see-project-button')];
 const showPopupWindow = (btn) => {
   popupWindow.classList.add('showPopup');
+  popupBody.classList.add('showPopup');
   let projectPortfolio = myProjects.filter((project) => project.key === Number(btn.dataset.key));
   [projectPortfolio] = projectPortfolio;
   // Add project Name
-  document.querySelector('.popup-window .popup-window-header h2').innerText = projectPortfolio.projectName;
+  document.querySelector('.popup-wrapper .popup-window-header h2').innerText = projectPortfolio.projectName;
   // Add project Image
-  const projectImage = document.querySelector('.popup-window .snapshoot-img img');
+  const projectImage = document.querySelector('.popup-wrapper .snapshoot-img img');
   projectImage.src = projectPortfolio.projectImage;
   projectImage.alt = projectPortfolio.projectName;
   // Add project Text
-  document.querySelector('.popup-window .blocks .right-block p').innerText = projectPortfolio.projectText;
+  document.querySelector('.popup-wrapper .blocks .right-block p').innerText = projectPortfolio.projectText;
   // Add project Technologies
-  const technologiesWrap = document.querySelector('.popup-window .blocks .left-block ul');
+  const technologiesWrap = document.querySelector('.popup-wrapper .blocks .left-block ul');
   const technologiesWrapChild = [...technologiesWrap.childNodes];
   technologiesWrapChild.forEach((child, index) => {
     technologiesWrap.removeChild(technologiesWrapChild[index]);
@@ -136,12 +138,13 @@ const showPopupWindow = (btn) => {
     technologiesWrap.appendChild(techItem);
   });
   // Add links to Buttons
-  document.querySelector('.popup-window .blocks .left-block-btns .see-live-btn').href = projectPortfolio.liveLink;
-  document.querySelector('.popup-window .blocks .left-block-btns .see-code-btn').href = projectPortfolio.sourceLink;
+  document.querySelector('.popup-wrapper .blocks .left-block-btns .see-live-btn').href = projectPortfolio.liveLink;
+  document.querySelector('.popup-wrapper .blocks .left-block-btns .see-code-btn').href = projectPortfolio.sourceLink;
 };
 seeProjectBtns.forEach((btn) => btn.addEventListener('click', () => showPopupWindow(btn)));
-const closePopupWindow = document.querySelector('.popup-window .x img');
+const closePopupWindow = document.querySelector('.popup-wrapper .x img');
 function popupClose() {
   popupWindow.classList.remove('showPopup');
+  popupBody.classList.remove('showPopup');
 }
 closePopupWindow.addEventListener('click', () => popupClose());

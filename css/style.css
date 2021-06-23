@@ -440,7 +440,9 @@ header {
 }
 
 .snapshoot-img img {
-  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: auto;
 }
 
 .contact-section {
@@ -602,12 +604,25 @@ header {
 }
 
 .popup-window {
-  width: 100%;
-  padding: 0 100px;
-  display: none;
-  align-self: center;
-  justify-content: center;
   position: fixed;
+  z-index: 88;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #c1c7d0;
+  display: none;
+}
+
+.popup-wrapper {
+  background-color: white;
+  width: 100%;
+  display: none;
+  padding: 20px;
+  align-self: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
   z-index: 89;
   top: 77px;
   left: 50%;
@@ -617,18 +632,6 @@ header {
   overflow-y: auto;
   border-radius: 16px;
   border: 1px solid #dfe1e6;
-  background-color: #c1c7d0;
-}
-
-.popup-wrapper {
-  background-color: white;
-  width: 75%;
-  display: flex;
-  padding: 20px;
-  align-self: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 10px;
   position: fixed;
 }
 
@@ -694,22 +697,12 @@ header {
 }
 
 .showPopup {
-  display: flex;
+  display: block;
 }
 
 @media screen and (max-width: 991.98px) {
   .blocks {
     flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .left-block .grid-block {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .left-block .grid-block .card-skills-li {
-    margin-left: -10px;
   }
 }
 
@@ -994,5 +987,19 @@ header {
 
   .contact-section-title {
     margin-bottom: -25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .left-block .grid-block {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .left-block .grid-block .card-skills-li {
+    margin-left: -10px;
+  }
+
+  .popup-window-header{
+    height: 40px;
   }
 }
