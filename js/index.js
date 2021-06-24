@@ -157,6 +157,8 @@ submitContactBtn.addEventListener('click', (e) => {
     emailInput.parentElement.classList.add('invalid-input');
     submitContactBtn.parentElement.classList.add('invalid-input');
     submitContactBtn.classList.add('submit-contact-disable');
+  }else{
+
   }
 });
 emailInput.addEventListener('input', (e) => {
