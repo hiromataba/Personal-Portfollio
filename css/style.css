@@ -632,6 +632,13 @@ header {
   color: white;
 }
 
+.submit-contact-disable {
+  pointer-events: none;
+  border: 1px solid #c1c7d0;
+  background-color: #fff;
+  color: #5e6c84;
+}
+
 .popup-window {
   position: fixed;
   z-index: 88;
@@ -734,7 +741,7 @@ header {
     background-image: url("../img/desktopversionhomepage.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top right;
     top: 1px;
     height: 910px;
     overflow: hidden;
@@ -980,7 +987,7 @@ header {
     flex-direction: column;
     width: 100%;
     background-color: #6070ff;
-    background-image: url("/img/contact-form-background-shapes.svg");
+    background-image: url("../img/contact-form-background-shapes.svg");
     background-repeat: no-repeat;
   }
 

@@ -155,13 +155,19 @@ submitContactBtn.addEventListener('click', (e) => {
   if (emailInput.value !== emailInput.value.toLowerCase()) {
     e.preventDefault();
     emailInput.parentElement.classList.add('invalid-input');
+    submitContactBtn.parentElement.classList.add('invalid-input');
+    submitContactBtn.classList.add('submit-contact-disable');
   }
 });
 emailInput.addEventListener('input', (e) => {
   if (e.target.value !== emailInput.value.toLowerCase()) {
     e.preventDefault();
     emailInput.parentElement.classList.add('invalid-input');
+    submitContactBtn.classList.add('submit-contact-disable');
+    submitContactBtn.parentElement.classList.add('invalid-input');
   } else {
+    submitContactBtn.classList.remove('submit-contact-disable');
     emailInput.parentElement.classList.remove('invalid-input');
+    submitContactBtn.parentElement.classList.remove('invalid-input');
   }
 });
