@@ -151,6 +151,8 @@ closePopupWindow.addEventListener('click', () => popupClose());
 // Add validation to the email
 const submitContactBtn = document.querySelector('.submit-contact');
 const emailInput = document.querySelector('form fieldset input[type="email"');
+const nameInput = document.querySelector('form fieldset input[type="text"');
+const messageInput = document.querySelector('form fieldset textare"');
 submitContactBtn.addEventListener('click', (e) => {
   if (emailInput.value !== emailInput.value.toLowerCase()) {
     e.preventDefault();
