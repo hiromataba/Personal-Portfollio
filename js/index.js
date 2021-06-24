@@ -152,26 +152,54 @@ closePopupWindow.addEventListener('click', () => popupClose());
 const submitContactBtn = document.querySelector('.submit-contact');
 const emailInput = document.querySelector('form fieldset input[type="email"');
 const nameInput = document.querySelector('form fieldset input[type="text"');
-const messageInput = document.querySelector('form fieldset textare"');
+const messageInput = document.querySelector('form fieldset textarea');
+const inputsArray = [nameInput, emailInput, messageInput];
+function saveFormInputs(name, email, message) {
+  const formInformation = {
+    name: name.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem('formInformation', JSON.stringify(formInformation));
+}
+// submit validation
+window.addEventListener('load', () => {
+  if (JSON.parse(localStorage.getItem('formInformation'))) {
+    const { name, email, message } = JSON.parse(localStorage.getItem('formInformation'));
+    nameInput.value = name;
+    emailInput.value = email;
+    messageInput.value = message;
+  }
+});
 submitContactBtn.addEventListener('click', (e) => {
   if (emailInput.value !== emailInput.value.toLowerCase()) {
     e.preventDefault();
     emailInput.parentElement.classList.add('invalid-input');
     submitContactBtn.parentElement.classList.add('invalid-input');
     submitContactBtn.classList.add('submit-contact-disable');
-  }else{
-
-  }
-});
-emailInput.addEventListener('input', (e) => {
-  if (e.target.value !== emailInput.value.toLowerCase()) {
-    e.preventDefault();
-    emailInput.parentElement.classList.add('invalid-input');
-    submitContactBtn.classList.add('submit-contact-disable');
-    submitContactBtn.parentElement.classList.add('invalid-input');
   } else {
-    submitContactBtn.classList.remove('submit-contact-disable');
-    emailInput.parentElement.classList.remove('invalid-input');
-    submitContactBtn.parentElement.classList.remove('invalid-input');
+    // SAVE DATA TO LOCAL STORAGE
+    saveFormInputs(nameInput, emailInput, messageInput);
   }
 });
+inputsArray.forEach((input) => input.addEventListener('input', (e) => {
+  if (input === nameInput) {
+    nameInput.value = input.value;
+  } else if (input === emailInput) {
+    emailInput.value = input.value;
+    // Add validation email
+    if (e.target.value !== emailInput.value.toLowerCase()) {
+      e.preventDefault();
+      emailInput.parentElement.classList.add('invalid-input');
+      submitContactBtn.classList.add('submit-contact-disable');
+      submitContactBtn.parentElement.classList.add('invalid-input');
+    } else {
+      submitContactBtn.classList.remove('submit-contact-disable');
+      emailInput.parentElement.classList.remove('invalid-input');
+      submitContactBtn.parentElement.classList.remove('invalid-input');
+    }
+  } else {
+    messageInput.value = input.value;
+  }
+  saveFormInputs(nameInput, emailInput, messageInput);
+}));
