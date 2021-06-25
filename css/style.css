@@ -43,6 +43,11 @@ header {
   text-decoration: none;
 }
 
+.mylogo img{
+  width: 100px;
+  height: 35px;
+}
+
 .nav-links {
   display: none;
 }
