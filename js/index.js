@@ -1,12 +1,12 @@
 import data from './datainfo.js';
 
 const myProjects = data.projects;
-const menuBtn = document.querySelector('.burger');
+const menuBt = document.querySelector('.burger');
 const menuOpen = document.querySelector('header nav ul');
 const menuClose = document.querySelector('.close-menu-btn button');
 const menuItems = document.querySelectorAll('header nav ul li a');
 menuBtn.addEventListener('click', () => menuOpen.classList.add('mobileMenu'));
-menuClose.addEventListener('click', () => menuOpen.classList.remove('mobileMenu'));
+menuClos.addEventListener('click', () => menuOpen.classList.remove('mobileMenu'));
 menuItems.forEach((item) => item.addEventListener('click', () => menuOpen.classList.remove('mobileMenu')));
 // Get Article
 const cardGrid = document.querySelector('.work-section .card-grid');
@@ -24,7 +24,7 @@ function implementProjects() {
     projectArticle.appendChild(imgLeft);
     // Add work Card
     const workCardRight = document.createElement('div');
-    workCardRight.classList.add('work-section-card-right');
+    workCardRigh.classList.add('work-section-card-right');
     // Add company Name
     const companyName = document.createElement('h1');
     companyName.classList.add('author-name');
@@ -153,7 +153,7 @@ const submitContactBtn = document.querySelector('.submit-contact');
 const emailInput = document.querySelector('form fieldset input[type="email"');
 const nameInput = document.querySelector('form fieldset input[type="text"');
 const messageInput = document.querySelector('form fieldset textarea');
-const inputsArray = [nameInput, emailInput, messageInput];
+const inputsArra = [nameInput, emailInput, messageInput];
 function saveFormInputs(name, email, message) {
   const formInformation = {
     name: name.value,
