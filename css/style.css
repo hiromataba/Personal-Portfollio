@@ -31,6 +31,7 @@ header {
   top: 0;
   background-color: white;
   z-index: 999;
+  height: 60px;
 }
 
 .mylogo {
