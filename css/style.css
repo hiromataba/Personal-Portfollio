@@ -5,7 +5,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #f7f6f9;
 }
 
@@ -31,6 +31,7 @@ header {
   top: 0;
   background-color: white;
   z-index: 999;
+  height: 60px;
 }
 
 .mylogo {
@@ -41,6 +42,11 @@ header {
 
 .mylogo a {
   text-decoration: none;
+}
+
+.mylogo img {
+  width: 100px;
+  height: 35px;
 }
 
 .nav-links {
@@ -85,7 +91,7 @@ header {
 }
 
 .home-section {
-  background-image: url("../img/header.png");
+  background-image: url('../img/header.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top right;
@@ -460,7 +466,7 @@ header {
   padding-left: 8px;
   border-top-left-radius: 100px;
   background-color: #6070ff;
-  background-image: url("../img/contact-bg.png");
+  background-image: url('../img/contact-bg.png');
   background-position: top right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -577,7 +583,6 @@ header {
 }
 
 .fieldset {
-  padding: 0;
   margin: 0;
   border: none;
 }
@@ -738,7 +743,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("../img/desktopversionhomepage.png");
+    background-image: url('../img/desktopversionhomepage.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top right;
@@ -987,7 +992,7 @@ header {
     flex-direction: column;
     width: 100%;
     background-color: #6070ff;
-    background-image: url("../img/contact-form-background-shapes.svg");
+    background-image: url('../img/contact-form-background-shapes.svg');
     background-repeat: no-repeat;
   }
 
