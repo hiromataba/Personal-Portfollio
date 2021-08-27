@@ -13,7 +13,7 @@ Here is the link to the live version : https://hiromataba.github.io/Personal-Por
     - Use CSS Grid to place elements in the page.
     - Build a personal portfolio site.
 
-![work](https://user-images.githubusercontent.com/75126481/120823644-eb926a80-c557-11eb-810c-2e6f6d4d071a.png)
+
 
 # Desktop version
 
