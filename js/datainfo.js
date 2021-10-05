@@ -2,17 +2,20 @@ const data = {
     projects: [
       {
         key: 0,
-        projectName: 'Tonic',
-        projectImage: './img/first-snapshot.png',
-        companyName: 'CANOPY',
-        projectPosition: 'Back And Dev',
+        projectName: 'Consul',
+        projectImage: './img/portfolio1.png',
+        companyName: 'Consul',
+        projectPosition: 'Fontend Dev',
         projectDate: 2015,
-        projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+        projectDescription: `The purpose of our website is to increase our clients' topline
+        by optimizing their growth strategies, marketing, pricing and
+        sales.`,
         projectTechnologies: ['html', 'css', 'JavaScript'],
         projectText: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-        liveLink: '#',
-        sourceLink: '#',
+        liveLink: 'https://hiromataba.github.io/Capstone-Html-And-Css-Module/',
+        sourceLink: 'https://github.com/hiromataba/Capstone-Html-And-Css-Module',
       },
+      
       {
         key: 1,
         projectName: 'Multi-Post Stories',
