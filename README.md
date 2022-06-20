@@ -11,7 +11,7 @@
     - Understand how to parse a Figma design to create a UI.
     - Use Flexbox to place elements in the page.
     - Use CSS Grid to place elements in the page.
-    - Build a personal portfolio site.
+    - Build a personal portfolio site
 
 
 
